@@ -179,7 +179,8 @@ header {
 
 .contactme {
   padding: 3rem 0;
-  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  margin-bottom: 10rem;
   height: auto;
 }
 .contactme-container {
@@ -303,6 +304,12 @@ textarea {
     flex: 0 0 40%;
   }
 
+  .myinfo-interior-container {
+    background: url("../media/vectors/pixeltrue-contact-me.svg") no-repeat;
+    background-size: contain;
+    background-position-y: 100%;
+  }
+
   .myinfo-para {
     font-size: 1.2rem;
     line-height: 1.8rem;
@@ -354,6 +361,7 @@ textarea {
   .radio-container {
     display: inline-block;
     padding: 0 1rem;
+    padding-top: 1.2rem;
   }
   .radio-container label {
     padding-bottom: 1rem;
