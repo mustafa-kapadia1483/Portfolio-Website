@@ -87,10 +87,16 @@ header {
   display: block;
   text-decoration: none;
   font-size: 1.5rem;
-  margin-right: 1rem;
   padding: 1rem;
   text-align: right;
   color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.single-link:hover {
+  color: #111;
+  background: #eeeeee;
+  transform: translateX(-0.5rem);
 }
 
 .show-links {
@@ -143,6 +149,9 @@ header {
   .single-link {
     margin: 1.2rem;
     flex: 1 0 auto;
+  }
+  .single-link:hover {
+    transform: unset;
   }
 }
 
@@ -258,26 +267,26 @@ header {
 }
 
 .skill-icon {
-  color: #3b3b3b;
+  color: #111111;
   font-size: 4rem;
   padding: 0.5rem;
   margin: 1rem 0;
 }
 
 .skill-title {
-  color: #7a7a7a;
+  color: #333333;
   margin: 0.5rem 0;
 }
 
 .single-skill-container {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
   flex: 1 0 calc(50% - 0.5rem);
   transition: all 0.3s ease;
 }
 .single-skill-container:hover {
   transform: translateY(-1rem);
-  background: #eee;
+  background: #dddddd;
 }
 
 @media screen and (min-width: 611px) {
@@ -286,6 +295,7 @@ header {
     margin: 1rem 0;
   }
   .single-skill-container {
+    padding: 2.5rem;
     flex: 1 0 calc(25% - 0.3rem);
   }
   .skill-icon {

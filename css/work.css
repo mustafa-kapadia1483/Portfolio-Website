@@ -87,10 +87,16 @@ header {
   display: block;
   text-decoration: none;
   font-size: 1.5rem;
-  margin-right: 1rem;
   padding: 1rem;
   text-align: right;
   color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.single-link:hover {
+  color: #111;
+  background: #eeeeee;
+  transform: translateX(-0.5rem);
 }
 
 .show-links {
@@ -143,6 +149,9 @@ header {
   .single-link {
     margin: 1.2rem;
     flex: 1 0 auto;
+  }
+  .single-link:hover {
+    transform: unset;
   }
 }
 .hero-container {
