@@ -16,6 +16,10 @@ html::-webkit-scrollbar-track {
   background: #000;
 }
 
+body {
+  background: #fff;
+}
+
 html::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 15px;
@@ -229,7 +233,7 @@ header {
 .section-name {
   text-align: center;
   padding: 1rem;
-  /* margin-top: 1rem; */
+  margin-top: 1rem;
 }
 .section-title {
   font-size: 3rem;
