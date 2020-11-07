@@ -147,7 +147,7 @@ header {
   position: relative;
   top: 5rem;
   height: auto;
-  /* flex: 1 0 auto; */
+  padding-bottom: 5rem;
 }
 
 .hero-heading {
@@ -167,191 +167,162 @@ header {
 
 /* Contact Me */
 
-.contactme {
+.work {
   padding: 3rem 0;
   margin-bottom: 2rem;
   height: auto;
 }
-.contactme-container {
-  max-width: 90vw;
+.work-container {
+  max-width: 70vw;
   margin: 3rem auto;
-  background: #fff;
+  background: #40bfff;
   border-radius: 20px;
+  color: #000;
 }
 
-.myinfo-container {
+.img-container {
   color: #000000;
-  display: flex;
-  justify-content: center;
-  background: #79cef9;
+  background: transparent;
   border-radius: 20px;
+  width: 100%;
+  background: #40bfff;
+}
+
+.work-img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.work-img-interior {
+  width: 100%;
+  height: auto;
+}
+
+.separator {
+  background: -moz-linear-gradient(
+    left,
+    rgba(64, 191, 255, 0) 50%,
+    rgba(64, 191, 255, 1) 53%,
+    rgba(64, 191, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(64, 191, 255, 0) 50%,
+    rgba(64, 191, 255, 1) 53%,
+    rgba(64, 191, 255, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(64, 191, 255, 0) 50%,
+    rgba(64, 191, 255, 1) 53%,
+    rgba(64, 191, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0040bfff', endColorstr='#40bfff',GradientType=1 );
+
+  transform: rotate(90deg);
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: -13rem;
+  opacity: 0.95;
+  left: 0;
+}
+
+.work-info-container {
+  background: #40bfff;
+  border-radius: 20px;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.work-info-interior-container {
   padding: 2rem 0;
 }
 
-.myinfo-interior-container {
-  margin: 2rem 0;
+.work-info-heading,
+.work-info-para,
+.work-info-but-container {
+  margin: 1rem 0;
+  margin-left: 1.5rem;
 }
 
-.myinfo-heading,
-.myinfo-para,
-.myinfo-small-heading {
+.work-info-heading {
+  letter-spacing: 0.15rem;
+}
+
+.work-info-para {
+  max-width: 18rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: #333333;
+}
+
+.work-info-but-container {
   margin-left: 1rem;
 }
 
-.myinfo-heading {
-  margin-bottom: 1rem;
-  letter-spacing: 0.1rem;
-  font-size: 1.5rem;
-}
-
-.myinfo-para {
-  color: #333333;
-  margin-bottom: 2.5rem;
-  max-width: 20rem;
-}
-
-.myinfo-small-heading {
-  margin-bottom: 2rem;
-  color: #333333;
-}
-.myinfo-small {
-  margin-left: 1rem;
-}
-
-.contactme-form-container {
-  max-width: 75vw;
-  margin: 2rem auto;
-}
-
-.label-input-container {
-  color: #000;
-  margin: 1rem auto;
-}
-.label-input-container label {
-  display: block;
-  color: #222222;
-}
-.label-input-container input,
-textarea {
-  width: 90%;
-  border: none;
-  border-bottom: 2px solid #aaa;
-  height: 2rem;
-  margin-top: 1rem;
-  outline: none;
-}
-
-.label-input-container input:focus,
-textarea:focus {
-  border-bottom: 3px solid #79cef9;
-}
-
-.radio-container label {
+.work-info-but-container a {
   display: inline-block;
-  padding: 0.2rem 0;
-  margin-left: 0.5rem;
-  cursor: pointer;
-}
-
-.radio-container {
-  margin: 0.5rem 0;
-}
-
-.label-input-container input[type="radio"] {
-  width: unset;
-  height: unset;
-  cursor: pointer;
-}
-
-.label-input-container input[type="submit"] {
-  border-bottom: none;
-  cursor: pointer;
-  background: #06248f;
-  color: #eee;
+  margin: 1rem 0.5rem;
+  padding: 1rem 1rem;
   border-radius: 6px;
-  height: 3rem;
-  font-size: 1.2rem;
-  margin: 1rem 0 2rem 0;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
-.label-input-container input[type="submit"]:hover {
-  background: #daff36;
+.live-demo {
+  background: #0a4867;
+  color: #eee;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.live-demo:hover {
+  background: #e000c2;
   color: #000;
 }
 
-textarea {
-  height: 4rem;
+.view-source {
+  color: #000;
+  background: #fff;
+}
+
+.view-source:hover {
+  color: #fff;
+  background: #000;
 }
 
 @media screen and (min-width: 928px) {
-  .contactme-container {
+  .work-container {
+    overflow: hidden;
+    border-radius: 20px;
     display: flex;
     justify-content: space-between;
   }
-  .myinfo-container {
+  .img-container {
     flex: 0 0 40%;
   }
 
-  .myinfo-para {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-  }
-
-  .myinfo-small-heading {
-    font-size: 1.2rem;
-    margin-top: 3rem;
-  }
-
-  .contactme-form-container {
+  .work-info-container {
     flex: 0 0 55%;
-    display: grid;
-    margin: 4rem auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
-    gap: 2rem 0.5rem;
-    grid-template-areas:
-      "first second"
-      "third fourth"
-      "options options"
-      "message message";
-  }
-  .first {
-    grid-area: first;
-  }
-  .second {
-    grid-area: second;
-  }
-  .third {
-    grid-area: third;
-  }
-  .fourth {
-    grid-area: fourth;
-  }
-  .options {
-    grid-area: options;
-  }
-  .message {
-    grid-area: message;
-  }
-  .label-input-container {
-    margin: auto 0;
   }
 
-  .label-input-container p {
-    font-size: 1.4rem;
+  .work-img {
+    height: 100%;
   }
-  .radio-container {
-    display: inline-block;
-    padding: 0 1rem;
+  .work-img-interior {
+    height: 100%;
+    transform: scale(1.2);
   }
-  .radio-container label {
-    padding-bottom: 1rem;
-    font-size: 1.1rem;
-  }
-  .radio-container input[type="radio"] {
-    padding: 0;
-    margin: 0;
+  .separator {
+    width: unset;
+    height: 100%;
+    transform: rotate(0);
+    right: 0;
+    top: 0;
+    left: unset;
   }
 }
 
