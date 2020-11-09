@@ -39,8 +39,7 @@
             <h4 class="myinfo-small-heading"><i class="fas fa-map-marker-alt"></i><span class="myinfo-small">Mumbai-10, India</span></h4>
             </div>
           </div>
-          <div class="contactme-form-container">
-            <form name="contact-me" method="POST" data-netlify="true">
+          <form name="contact-me" method="POST" data-netlify="true" class="contactme-form-container">
             <div class="label-input-container first"><label for="fname"><small>First Name</small></label>
             <input type="text" name="fname" id="fname">
             </div>
@@ -56,14 +55,14 @@
             <div class="label-input-container options">
               <p>What services do you need?</p>
               <div class="radio-container">
-              <input type="radio" name="services" id="webdev">
+              <input type="radio" name="services" id="webdev" value="Web Development">
               <label for="webdev"><small>Web Development</small></label>
               </div>
               <div class="radio-container">
-              <input type="radio" name="services" id="design">
+              <input type="radio" name="services" id="design" value="UI/UX Design">
               <label for="design"><small>UI/UX Design</small></label></div>
               <div class="radio-container">
-              <input type="radio" name="services" id="other">
+              <input type="radio" name="services" id="other" value="Other">
               <label for="other"><small>Other</small></label></div>
             </div>
             <div class="label-input-container message">
@@ -73,8 +72,7 @@
               <div class="label-input-container">
                 <input type="submit" value="Submit">
               </div>
-              </form>
-          </div>
+        </form>
         </div>
         </section>
           </div>
