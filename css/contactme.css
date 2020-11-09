@@ -98,6 +98,10 @@ header {
   background: #eeeeee;
   transform: translateX(-0.5rem);
 }
+.current {
+  color: #111;
+  background: #eeeeee;
+}
 
 .show-links {
   height: 205px;
