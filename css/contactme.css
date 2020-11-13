@@ -298,6 +298,7 @@ textarea:focus {
 
 textarea {
   height: 4rem;
+  width: 95%;
 }
 
 @media screen and (min-width: 928px) {
