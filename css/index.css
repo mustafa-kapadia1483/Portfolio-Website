@@ -163,7 +163,7 @@ header {
 
 .hero-container {
   position: relative;
-  top: 5rem;
+  margin-top: 5rem;
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
