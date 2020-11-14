@@ -230,6 +230,17 @@ header {
   margin-bottom: 2rem;
   color: #333333;
 }
+
+.contact-links {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-out;
+}
+
+.contact-links:hover {
+  color: #002092;
+}
+
 .myinfo-small {
   margin-left: 1rem;
 }
