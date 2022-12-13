@@ -128,22 +128,27 @@ header {
   html::-webkit-scrollbar {
     width: 1em;
   }
+
   .hamburger-btn {
     display: none;
   }
+
   .name {
     margin: 0;
     padding: 0;
   }
+
   .nav-header {
     margin: 1rem;
     padding: 1rem;
   }
+
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -152,14 +157,17 @@ header {
     height: auto;
     background: none;
   }
+
   .single-link {
     margin: 1.2rem;
     flex: 1 0 auto;
   }
+
   .single-link:hover {
     transform: unset;
   }
 }
+
 .hero-container {
   position: relative;
   top: 5rem;
@@ -188,12 +196,14 @@ header {
   margin-bottom: 2rem;
   height: auto;
 }
+
 .work-container {
   max-width: 70vw;
   margin: 3rem auto;
   background: #40bfff;
   border-radius: 20px;
   color: #000;
+  overflow: hidden;
 }
 
 .img-container {
@@ -213,38 +223,8 @@ header {
 
 .work-img-interior {
   width: 100%;
-  height: auto;
+  max-height: 100%;
   object-fit: cover;
-}
-
-.separator {
-  background: -moz-linear-gradient(
-    left,
-    rgba(64, 191, 255, 0) 50%,
-    rgba(64, 191, 255, 1) 53%,
-    rgba(64, 191, 255, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    left,
-    rgba(64, 191, 255, 0) 50%,
-    rgba(64, 191, 255, 1) 53%,
-    rgba(64, 191, 255, 1) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(64, 191, 255, 0) 50%,
-    rgba(64, 191, 255, 1) 53%,
-    rgba(64, 191, 255, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0040bfff', endColorstr='#40bfff',GradientType=1 );
-
-  transform: rotate(90deg);
-  position: absolute;
-  width: 100%;
-  height: auto;
-  bottom: -13rem;
-  opacity: 0.95;
-  left: 0;
 }
 
 .work-info-container {
@@ -318,6 +298,7 @@ header {
     display: flex;
     justify-content: space-between;
   }
+
   .img-container {
     flex: 0 0 40%;
   }
@@ -329,17 +310,9 @@ header {
   .work-img {
     height: 100%;
   }
+
   .work-img-interior {
     height: 100%;
-    transform: scale(1.2);
-  }
-  .separator {
-    width: unset;
-    height: 100%;
-    transform: rotate(0);
-    right: 0;
-    top: 0;
-    left: unset;
   }
 }
 
