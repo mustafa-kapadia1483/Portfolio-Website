@@ -217,36 +217,6 @@ header {
   object-fit: cover;
 }
 
-.separator {
-  background: -moz-linear-gradient(
-    left,
-    rgba(64, 191, 255, 0) 50%,
-    rgba(64, 191, 255, 1) 53%,
-    rgba(64, 191, 255, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    left,
-    rgba(64, 191, 255, 0) 50%,
-    rgba(64, 191, 255, 1) 53%,
-    rgba(64, 191, 255, 1) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(64, 191, 255, 0) 50%,
-    rgba(64, 191, 255, 1) 53%,
-    rgba(64, 191, 255, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0040bfff', endColorstr='#40bfff',GradientType=1 );
-
-  transform: rotate(90deg);
-  position: absolute;
-  width: 100%;
-  height: auto;
-  bottom: -13rem;
-  opacity: 0.95;
-  left: 0;
-}
-
 .work-info-container {
   background: #40bfff;
   border-radius: 20px;
@@ -331,15 +301,6 @@ header {
   }
   .work-img-interior {
     height: 100%;
-    transform: scale(1.2);
-  }
-  .separator {
-    width: unset;
-    height: 100%;
-    transform: rotate(0);
-    right: 0;
-    top: 0;
-    left: unset;
   }
 }
 
