@@ -128,22 +128,27 @@ header {
   html::-webkit-scrollbar {
     width: 1em;
   }
+
   .hamburger-btn {
     display: none;
   }
+
   .name {
     margin: 0;
     padding: 0;
   }
+
   .nav-header {
     margin: 1rem;
     padding: 1rem;
   }
+
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -152,14 +157,17 @@ header {
     height: auto;
     background: none;
   }
+
   .single-link {
     margin: 1.2rem;
     flex: 1 0 auto;
   }
+
   .single-link:hover {
     transform: unset;
   }
 }
+
 .hero-container {
   position: relative;
   top: 5rem;
@@ -188,12 +196,14 @@ header {
   margin-bottom: 2rem;
   height: auto;
 }
+
 .work-container {
   max-width: 70vw;
   margin: 3rem auto;
   background: #40bfff;
   border-radius: 20px;
   color: #000;
+  overflow: hidden;
 }
 
 .img-container {
@@ -213,7 +223,7 @@ header {
 
 .work-img-interior {
   width: 100%;
-  height: auto;
+  max-height: 100%;
   object-fit: cover;
 }
 
@@ -288,6 +298,7 @@ header {
     display: flex;
     justify-content: space-between;
   }
+
   .img-container {
     flex: 0 0 40%;
   }
@@ -299,6 +310,7 @@ header {
   .work-img {
     height: 100%;
   }
+
   .work-img-interior {
     height: 100%;
   }
